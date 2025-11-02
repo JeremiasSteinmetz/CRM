@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthCheckController {
     @GetMapping("/health-check")
     public String healthCheck(){
-        return "'-_-' ok Deus";
+        String coracao = "\u2764\uFE0F";
+        return "Vivi " + coracao;
     }
 }
